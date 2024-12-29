@@ -1,0 +1,76 @@
+body {
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    position: relative;
+  }
+  
+  .game-container {
+    grid-template-columns: 160px 160px;
+  }
+  
+  #game-over-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    display: none;
+  }
+  
+  .button {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #dfdbdb;
+    border-radius: 10px;
+    cursor: no-drop;
+    opacity: 0.9;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .active {
+    opacity: 1;
+    box-shadow: 0 0 15px rgb(29, 165, 199);
+    border: 2px solid rgb(14, 229, 236);
+  }
+  
+  @keyframes btnScaleUpandDown {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .btn {
+    animation: btnScaleUpandDown 1.5s infinite ease-in-out;
+  }
+  
+  .status {
+    color: white;
+  }
+  
+  h1 {
+    font-size: 60px;
+  }
+  
